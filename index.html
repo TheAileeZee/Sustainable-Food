@@ -1,1 +1,193 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title>Time to Grow</title>
+       <link rel="stylesheet" href="css/style.css"/>
+	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+       <link href='http://fonts.googleapis.com/css?family=Lilita+One' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
+	   <link href='http://fonts.googleapis.com/css?family=Galdeano' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Jacques+Francois' rel='stylesheet' type='text/css'>
+	<script>
+   
+
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+
+
+ </head> 
+	
+<body>
+
+<div id="fb-root"></div> 
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<header id="header">
+<div class="content">
+<div id="logo"><a href=""> Time to Grow, Inc.</a></div>
+
+<nav id="nav">
+	<ul>
+		<li><a href="#slide1" class="active" title="Next Section" >About</a></li>
+		<li><a href="#slide2" title="Next Section">Services</a></li>
+		<li><a href="#slide3" title="Next Section">Resources</a></li>
+		<li><a  href="#slide4" title="Next Section">Contact</a></li>
+		<li><a href="#slide5" title="Next Section">News</a></li>
+	</ul>
+</nav>
+</div>
+</header>	
+
+
+	<div id="slide1">
+		<div class="content">
+            <h2>IT'S TIME TO GROW</h2>
+		    <h1>YOUR PRODUCTION CAPACITY</h1>
+		    <div id="divider"> </div>
+		     <h3>YOUR IMPACT <br> SUSTAINABLY</h3>
+	       
+		</div> 
+    </div> 
+
+	<div id="slide2">
+		<div class="content" >
+            <div class="quotes_container">
+		    <h3 class="quotes">Whether you're expanding farm operations, striving to become a certified organic farm, or want to sustainably streamline your value-added food product process, our expert consultants and industry leaders are here to help.
+		    <p>
+			 <a href="http://www.youngfarmers.org/faces-like-mine-developing-young-african-american-food-movement-leaders/" target="_blank">Meet our team!</a> 
+		    </h3>
+		  <img src="img/wheel1.png" align="left"/> 
+		</div> 
+		</div> 
+    </div> 
+	
+	
+   <div id="slide3">
+		<div class="content">
+			<div class="bar">
+
+			   <div class="quotes_container">
+			   	
+  				<h3 class ="quotation2">
+  				Useful Resources:</h3>
+  				<h3 class="quotation">
+		       	<p><a href="http://worldagritech.rethinkevents.com/" target="_blank">Upcoming Agritech Conferences</a> 
+		       	<p><a href="http://www.croplife.com/management/top-5-trends-in-agriculture-technology/" target="_blank">Education and Informational Activities</a>  
+		       	<p><a href="http://lmgtfy.com/?q=farmers%27+markets+connecticut" target="_blank">Farmers' Markets & Business Opportunities</a> 
+		       	</h3>
+				
+					<div id="oak"> </div>
+				</div> 
+				</div>
+		       
+		    </div> 
+		</div> 
+    </div> 
+	
+	
+	<div id="slide4">
+		<div class="content">
+              <div class="quotes_container">
+		    <h3 class="quotation3">Interested in learning more? 
+		    	<p><img src="img/shovel.png" align="left"/> 
+		    		
+		    	</h3>
+		    <h3 class="quotations4">
+
+		    	<p> If you would like to talk to us about a project or you have a question, please get in touch. Fill in our contact form below and we’ll get right back to you.
+				<br> 
+				Whether you’re looking to discuss a new project or simply say hello, we’d love to hear from you.
+			
+			 
+					<form action="">
+					<fieldset>
+					<legend>Send us a message:</legend>
+					Name: <input type="text" size="30"><br>
+					E-mail: <input type="text" size="30"><br>
+					Reason for inquiry: 
+
+					<form action="">
+					<select name="reason">	
+					<option value="Expand Farm Business">Expand Farm Business</option>
+					<option value="Become Organic Certified">Become Organic Certified</option>
+					<option value="Grow food business">Grow "Value-Added" Food Business</option>
+					<option value="Break into the Agritech Industry">Break Into the Agritech Industry</option>
+					</select>
+					</form>
+
+
+					<br>
+
+					<textarea rows="10" cols="30">Your message here. 
+					</textarea>
+					<br><input type="submit" value="Submit">
+					
+					</fieldset>
+					</form>
+				</h3> 
+				</h3>
+			</h3>
+		 
+		</div> 
+		</div> 
+    </div> 
+	
+	
+	<div id="slide5">
+		<div class="content">
+           <div class="quotes_container">
+
+           	<div class="bar2">
+
+           		<div class="fb-like-box" data-href="http://www.facebook.com/FacebookDevelopers" data-width="600" data-height="400" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+
+           	<h3 class ="quotation2">
+  				Live Stream of Time to Grow, Inc. News</h3>
+  				<h3 class="quotation">
+		       	<p><img src="img/facebook.png" align="center"/> 
+		       	</h3>
+
+		       </div> 
+		    
+		  </div> 
+		
+
+
+		</div> 
+		
+
+    </div> 
+	
+
+</body>
+</html>
